@@ -38,11 +38,11 @@ app.get('/', (req, res) => {
 })
 
 const contactEmail = nodemailer.createTransport({
-	service: 'gmail',
-	// auth: {
-	// user: "guillaume.lequin713@gmail.com",
-	// pass: "Guigan713guillaume26",
-	// },
+	service: 'mailtrap',
+	auth: {
+	user: "f7386ca61edea1",
+	pass: "548870bba3ed2f",
+	},
 });
 
 contactEmail.verify((error) => {
